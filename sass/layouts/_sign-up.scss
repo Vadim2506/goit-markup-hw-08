@@ -1,0 +1,17 @@
+.sign-up {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 570px;
+  height: 86px;
+}
+.join-text,
+.sign-up__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}

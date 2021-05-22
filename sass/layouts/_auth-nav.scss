@@ -1,0 +1,52 @@
+.auth-nav {
+  display: flex;
+  padding: 0;
+}
+.auth-nav--modifier {
+  margin: 0;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.auth-nav__item {
+  margin-right: auto;
+}
+.auth-nav__item--modifier {
+  margin-left: 50px;
+}
+.auth-nav__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.auth-nav__link--modifier {
+  display: flex;
+  align-items: center;
+
+  transition: color var(--standard-animation);
+}
+.auth-nav--mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  stroke: currentColor;
+}
+.auth-nav--tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  stroke: currentColor;
+}

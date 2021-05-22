@@ -1,0 +1,30 @@
+.footer {
+  padding: 60px 0px;
+  background-color: #2f303a;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-menu__adress {
+  margin-right: 30px;
+  font-style: normal;
+  width: 270px;
+}
+.footer-menu__logo {
+  display: inline-block;
+  width: 145px;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-menu__logo--web {
+  color: var(--accent-color);
+}
+.footer-menu__logo--studio {
+  color: white;
+}
+.footer-menu__street {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: white;
+}

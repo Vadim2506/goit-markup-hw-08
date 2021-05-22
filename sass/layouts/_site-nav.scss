@@ -1,0 +1,14 @@
+.site-nav {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  letter-spacing: 0.02em;
+
+  &:hover,
+  & a:focus {
+    color: var(--accent-color);
+  }
+}

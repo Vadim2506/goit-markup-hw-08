@@ -1,0 +1,45 @@
+.footer-icons {
+  display: inline-flex;
+}
+.footer-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icons__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-icon-bgc);
+
+  transition: background-color var(--standard-animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer-icons__link:hover .footer-icons__svg,
+.footer-icons__link:focus .footer-icons__svg {
+  fill: var(--button-accent-text-color);
+}
+
+.footer-icons__svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.submit-btn__svg {
+  margin-left: 10px;
+}
+.submit-btn__svg--send-svg {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+.button-cursor {
+  cursor: pointer;
+}

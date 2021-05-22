@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3 p,
+ul {
+  margin: 0;
+  padding-left: 0;
+  display: inline-block;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #fff;
+  color: var(--primary-text-color);
+  font-family: var(--font-family--roboto);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.hide {
+  color: var(--title-text-color);
+  display: none;
+}
