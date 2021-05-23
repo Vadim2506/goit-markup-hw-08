@@ -3,8 +3,21 @@
   width: 145px;
   margin-right: 93px;
   font-family: Raleway;
-  font-size: 26px;
+
   line-height: 1.19;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    font-size: 24px;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    margin-right: 93px;
+  }
 }
 .main-nav__logo--web {
   color: var(--accent-color);

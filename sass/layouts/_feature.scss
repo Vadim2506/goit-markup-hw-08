@@ -1,15 +1,45 @@
 .feature {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: -30px;
+  }
 }
 .feature__item {
   margin-left: 30px;
 
   transition: opacity var(--standard-animation);
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 480px) and (min-width: 480px) and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199.98px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 .feature__item--modifier {
   width: 270px;
+  @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 354px;
+  }
 }
 .feature__icon {
   display: flex;
@@ -20,6 +50,10 @@
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 354px;
+  }
 }
 .feature__icon--modifier {
   width: 70px;

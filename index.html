@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
     <!-- top line -->
@@ -40,7 +42,9 @@
         <ul class="auth-nav auth-nav--modifier">
           <li class="auth-nav__item">
             <a
-              class="auth-nav__link auth-nav__link--modifier"
+              class="
+                auth-nav__link auth-nav__link--modifier auth-nav__link--margin
+              "
               href="mailto:info@devstudio.com"
             >
               <svg class="auth-nav--mail-icon">
@@ -65,7 +69,7 @@
 
     <main>
       <!-- headder -->
-      <section class="hero hero--modifier">
+      <!-- <section class="hero hero--modifier">
         <div class="container">
           <h1 class="hero--text">
             Эффективные решения<br />
@@ -76,7 +80,7 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Особенности -->
       <section class="section">
         <div class="container">
@@ -597,7 +601,7 @@
       </div>
     </footer>
     <!-- backdrop  -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal__close">
           <svg class="modal__icon">
@@ -662,7 +666,7 @@
           <button class="button-send" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script>
       (() => {
         const refs = {

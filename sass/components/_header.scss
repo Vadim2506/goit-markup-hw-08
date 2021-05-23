@@ -1,6 +1,13 @@
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding: 21px 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .main-nav {
   display: flex;
