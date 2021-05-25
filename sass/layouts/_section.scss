@@ -2,3 +2,28 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section__feature {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section__team {
+  text-align: center;
+  margin: 0px;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.section__clients {
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
