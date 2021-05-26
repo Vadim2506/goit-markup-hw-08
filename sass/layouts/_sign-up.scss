@@ -1,9 +1,12 @@
 .sign-up {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
   width: 570px;
-  height: 86px;
+
+  @media screen and (min-width: 1200px) {
+    height: 86px;
+  }
 }
 .join-text,
 .sign-up__text {

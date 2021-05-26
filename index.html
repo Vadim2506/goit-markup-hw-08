@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -17,8 +18,8 @@
   </head>
   <body>
     <!-- top line -->
-    <header class="header page-header">
-      <div class="container">
+    <!-- <header class="header page-header">
+      <div class="container ">
         <nav class="main-nav">
           <a href="./index.html" class="main-nav__logo"
             ><span class="main-nav__logo--web">Web</span
@@ -62,7 +63,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- headder -->
@@ -78,9 +79,8 @@
           </button>
         </div>
       </section>
-
       <!-- Особенности -->
-      <section class="section__feature">
+      <section class="section">
         <div class="container">
           <ul class="feature">
             <li class="feature__item feature__item--modifier">
@@ -161,12 +161,41 @@
         </div>
       </section>
       <!-- Наша команда / team -->
-      <section class="section__team">
+      <section class="section team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-card-set">
             <li class="team-card-set__item">
-              <img src="./images/team-card-1.jpg" alt="Product Designer" />
+              <picture>
+                <source
+                  srcset="./images/team-card-1.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/worker01.jpg   1x,
+                    ./images/tablet/worker01x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/worker01.jpg   1x,
+                    ./images/mobile/worker01x2.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/worker01.jpg"
+                  width="450"
+                  height="460"
+                  alt="портрет члена команды"
+                  class="team-members__img"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Игорь Демьяненко</h3>
                 <p class="worker__text">Product Designer</p>
@@ -224,7 +253,36 @@
             </li>
 
             <li class="team-card-set__item">
-              <img src="./images/team-card-2.jpg" alt="Frontend Developer" />
+              <picture>
+                <source
+                  srcset="./images/team-card-2.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/worker02.jpg   1x,
+                    ./images/tablet/worker02x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/worker02.jpg   1x,
+                    ./images/mobile/worker02x2.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/worker02.jpg"
+                  width="450"
+                  height="460"
+                  alt="портрет члена команды"
+                  class="team-members__img"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Ольга Репина</h3>
                 <p class="worker__text">Frontend Developer</p>
@@ -282,7 +340,36 @@
             </li>
 
             <li class="team-card-set__item">
-              <img src="./images/team-card-3.jpg" alt="Marketing" />
+              <picture>
+                <source
+                  srcset="./images/team-card-3.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/worker03.jpg   1x,
+                    ./images/tablet/worker03x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/worker03.jpg   1x,
+                    ./images/mobile/worker03x2.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/worker03.jpg"
+                  width="450"
+                  height="460"
+                  alt="портрет члена команды"
+                  class="team-members__img"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Николай Тарасов</h3>
                 <p class="worker__text">Marketing</p>
@@ -340,7 +427,36 @@
             </li>
 
             <li class="team-card-set__item">
-              <img src="./images/team-card-4.jpg" alt="UI Designer" />
+              <picture>
+                <source
+                  srcset="./images/team-card-4.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/worker04.jpg   1x,
+                    ./images/tablet/worker04x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/worker04.jpg   1x,
+                    ./images/mobile/worker04x2.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/worker04.jpg"
+                  width="450"
+                  height="460"
+                  alt="портрет члена команды"
+                  class="team-members__img"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Михаил Ермаков</h3>
                 <p class="worker__text">UI Designer</p>
@@ -399,8 +515,10 @@
           </ul>
         </div>
       </section>
+
       <!-- clients -->
-      <section class="section__clients">
+
+      <section class="section clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="client-logo">
