@@ -12,3 +12,9 @@
     color: var(--accent-color);
   }
 }
+
+.nav-block {
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
+}

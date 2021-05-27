@@ -23,20 +23,24 @@
             ><span class="main-nav__logo--web">Web</span
             ><span class="main-nav__logo--studio">Studio</span></a
           >
+        </nav>
+        <div class="nav-block">
           <ul class="menu site-nav">
             <li class="menu__item">
-              <a class="menu__link" href="./index.html">Студия</a>
+              <a class="menu__link" href="./index.html"
+                ><span class="menu__item">Студия</span></a
+              >
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html"
-                ><span class="menu__item--current">Портфолио</span></a
+              <a class="menu__link menu__item--current" href="./portfolio.html"
+                >Портфолио</a
               >
             </li>
             <li class="menu__item">
               <a class="menu__link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <ul class="auth-nav auth-nav--modifier">
           <li class="auth-nav__item">
             <a
@@ -100,12 +104,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-0.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-0.jpg           1x,
+                        ./images/desktop/img-0x2.jpg 2x,
+                        ./images/desktop/img-0x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product01.jpg   1x,
+                        ./images/tablet/product01x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product01.jpg   1x,
+                        ./images/mobile/product01x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product01.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
 
                 <div class="text-inner">
@@ -122,11 +154,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-1.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-1.jpg           1x,
+                        ./images/desktop/img-1x2.jpg 2x,
+                        ./images/desktop/img-1x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product02.jpg   1x,
+                        ./images/tablet/product02x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product02.jpg   1x,
+                        ./images/mobile/product02x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product02.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Постер</h3>
@@ -144,11 +205,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-2.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-2.jpg           1x,
+                        ./images/desktop/img-2x2.jpg 2x,
+                        ./images/desktop/img-2x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product03.jpg   1x,
+                        ./images/tablet/product03x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product03.jpg   1x,
+                        ./images/mobile/product03x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product03.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Ресторан</h3>
@@ -164,11 +254,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-3.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-3.jpg           1x,
+                        ./images/desktop/img-3x2.jpg 2x,
+                        ./images/desktop/img-3x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product04.jpg   1x,
+                        ./images/tablet/product04x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product04.jpg   1x,
+                        ./images/mobile/product04x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product04.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Проект</h3>
@@ -184,11 +303,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-4.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-4.jpg           1x,
+                        ./images/desktop/img-4x2.jpg 2x,
+                        ./images/desktop/img-4x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product05.jpg   1x,
+                        ./images/tablet/product05x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product05.jpg   1x,
+                        ./images/mobile/product05x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product05.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Проект</h3>
@@ -204,11 +352,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-5.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-5.jpg           1x,
+                        ./images/desktop/img-5x2.jpg 2x,
+                        ./images/desktop/img-5x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product06.jpg   1x,
+                        ./images/tablet/product06x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product06.jpg   1x,
+                        ./images/mobile/product06x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product06.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Inspiration</h3>
@@ -224,11 +401,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-6.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-6.jpg           1x,
+                        ./images/desktop/img-6x2.jpg 2x,
+                        ./images/desktop/img-6x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product07.jpg   1x,
+                        ./images/tablet/product07x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product07.jpg   1x,
+                        ./images/mobile/product07x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product07.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Издание</h3>
@@ -244,7 +450,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img src="./images/img-7.jpg" alt="Проект LAB" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-7.jpg           1x,
+                        ./images/desktop/img-7x2.jpg 2x,
+                        ./images/desktop/img-7x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product08.jpg   1x,
+                        ./images/tablet/product08x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product08.jpg   1x,
+                        ./images/mobile/product08x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product08.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Проект</h3>
@@ -260,11 +499,40 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </div>
-                  <img
-                    src="./images/img-8.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-8.jpg           1x,
+                        ./images/desktop/img-8x2.jpg 2x,
+                        ./images/desktop/img-8x3.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/product09.jpg   1x,
+                        ./images/tablet/product09x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/product09.jpg   1x,
+                        ./images/mobile/product09x2.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/product09.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                      class="cardset__img"
+                    />
+                  </picture>
                 </div>
                 <div class="text-inner">
                   <h3 class="text-inner__title">Growing</h3>
