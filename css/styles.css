@@ -1324,7 +1324,7 @@ a {
 
 @media screen and (min-width: 480px) {
   .modal {
-    max-width: 450px;
+    min-width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1478,7 +1478,7 @@ a {
   color: var(--primary-text-color);
 }
 
-@media screen and (miax-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .agreement__label {
     font-size: 12px;
   }
@@ -1557,7 +1557,6 @@ a {
   .site-nav {
     display: flex;
     flex-direction: column;
-    font-size: 40px;
     align-items: flex-start;
   }
 }
@@ -1704,7 +1703,7 @@ a {
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
-  line-height: 1.63;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   transition-property: background-color, color;
   transition-duration: 250ms;
@@ -1758,6 +1757,13 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .portfolio-btns .filter-btn {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  .portfolio-btns .filter-btn:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
