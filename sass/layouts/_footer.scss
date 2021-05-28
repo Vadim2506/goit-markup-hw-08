@@ -30,9 +30,12 @@
 }
 
 .footer-menu__adress {
-  margin-bottom: 60px;
   font-style: normal;
   width: 270px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .footer-menu__logo {
   display: inline-block;

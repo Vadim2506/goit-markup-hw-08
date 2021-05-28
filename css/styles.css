@@ -101,14 +101,13 @@ a {
 
 @media screen and (min-width: 400px) {
   .main-nav__logo {
-    font-size: 26px;
+    font-size: 44px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-nav__logo {
-    margin-right: 93px;
-    font-size: 44px;
+    font-size: 26px;
   }
 }
 
@@ -171,6 +170,12 @@ a {
 @media screen and (min-width: 768px) {
   .main-nav {
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    margin-right: 93px;
   }
 }
 
@@ -338,7 +343,7 @@ a {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .menu__item--current::after {
-    bottom: -43px;
+    bottom: -32px;
   }
 }
 
@@ -403,7 +408,7 @@ a {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .menu__item--current::after {
-    bottom: -43px;
+    bottom: -32px;
   }
 }
 
@@ -465,7 +470,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .auth-nav__item--modifier {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 0px;
   }
 }
@@ -547,7 +552,7 @@ a {
   background-position: center;
   background-size: cover;
   background-color: var(--backgr-dark);
-  background-image: linear-gradient(var(--hero-gradient)), url(../images/mobile/hero-mob.jpg), linear-gradient(to bottom, #c4c4c4, #c4c4c4);
+  background-image: linear-gradient(var(--hero-gradient)), url(../images/hero-img.jpg), linear-gradient(to bottom, #c4c4c4, #c4c4c4);
 }
 
 @media screen and (min-width: 1200px) {
@@ -559,31 +564,31 @@ a {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--modifier {
-    background-image: url(../images/mobile/hero-mobx2.jpg);
+    background-image: url(../images/hero-imgx2.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
   .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mob.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: url(../images/tablet/hero-tabletx2.jpg);
+    background-image: url(../images/mobile/hero-mobx2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: url(../images/hero-imgx2.jpg);
+    background-image: url(../images/tablet/hero-tabletx2.jpg);
   }
 }
 
@@ -1045,9 +1050,14 @@ a {
 }
 
 .footer-menu__adress {
-  margin-bottom: 60px;
   font-style: normal;
   width: 270px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-menu__adress {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-menu__logo {
@@ -1314,20 +1324,17 @@ a {
 
 @media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }
@@ -1393,6 +1400,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+  margin-top: 0;
 }
 
 .form__label {
@@ -1466,21 +1474,20 @@ a {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (miax-width: 1199px) {
   .agreement__label {
     font-size: 12px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .agreement__label {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
