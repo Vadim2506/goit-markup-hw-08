@@ -8,6 +8,14 @@
 }
 .menu__item {
   position: relative;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 33px;
+  }
+}
+.menu__item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
+  }
 }
 .menu__link {
   color: var(--title-text-color);
@@ -43,7 +51,7 @@
 
     @media screen and (min-width: 1200px) {
       &::after {
-        bottom: -31px;
+        bottom: -43px;
       }
     }
   }

@@ -7,6 +7,11 @@
     display: flex;
     flex-basis: calc((100% - 2 * 30px) / 2);
     flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
   }
 }
 .makets__item {

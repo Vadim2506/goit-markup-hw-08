@@ -6,8 +6,14 @@
 
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .client-logo {
   display: flex;

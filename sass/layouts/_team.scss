@@ -6,17 +6,28 @@
 .team__title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+
   line-height: 1.17;
 
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 .team-card-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -42,6 +53,11 @@
     0px 2px 1px RGB(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 30px;
 

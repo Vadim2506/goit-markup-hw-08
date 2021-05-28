@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 
@@ -18,4 +19,97 @@
 .main-nav {
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+
+  z-index: 6;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (max-width: 767px) {
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button .icon-close-burger {
+  display: none;
+}
+.menu-button.is-open .icon-close-burger {
+  display: block;
+}
+.menu-button.is-open .icon-menu-burger {
+  display: none;
+}
+.menu-container {
+  background-color: #fff;
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    align-items: flex-start;
+    z-index: 5;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-grow: 2;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    height: 796px;
+    transform: translate(-50%, -30px);
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.social__list {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  padding-top: 64px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.social__item {
+  margin-bottom: 10px;
+}
+
+.social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social__link {
+  padding: 5px 10px;
+  color: inherit;
+  text-decoration: none;
 }
