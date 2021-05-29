@@ -67,7 +67,11 @@
   }
 }
 .auth-nav__link--phone {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     font-size: 34px;
     color: var(--accent-color);
   }

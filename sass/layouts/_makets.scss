@@ -18,6 +18,12 @@
   margin-left: 30px;
 
   transition: opacity var(--standard-animation);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 .makets__img {
   position: relative;
@@ -45,4 +51,8 @@
   color: #ffffff;
 
   transform: translateY(100%);
+
+  @media screen and (max-width: 479px) {
+    font-size: 16px;
+  }
 }

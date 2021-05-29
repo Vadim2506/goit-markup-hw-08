@@ -7,9 +7,6 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
     flex-wrap: wrap;
     align-items: flex-end;
@@ -56,6 +53,9 @@
   padding: 15px 0 15px 16px;
   color: #fff;
 
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;

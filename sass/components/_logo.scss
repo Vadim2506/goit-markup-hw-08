@@ -1,12 +1,12 @@
 .main-nav__logo {
   display: inline-block;
 
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
 
   @media screen and (min-width: 400px) {
-    font-size: 44px;
+    font-size: 24px;
   }
 
   @media screen and (min-width: 768px) {

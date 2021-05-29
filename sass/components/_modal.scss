@@ -11,8 +11,6 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  overflow-y: scroll;
-
   @media screen and (min-width: 480px) {
     min-width: 450px;
     position: absolute;
@@ -23,7 +21,6 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;
-    overflow: hidden;
   }
 }
 .modal__close {
